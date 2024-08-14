@@ -1,0 +1,44 @@
+{
+  "name": "vite-plugin-conditional-compiler",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "",
+  "author": "Tingxuan Jiang <cowjiang@163.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cowjiang/vite-plugin-conditional-compiler.git"
+  },
+  "keywords": [
+    "vite",
+    "condition-compile",
+    "plugin",
+    "transform"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:tsup": "tsup src/*.ts --format cjs,esm --dts --splitting --clean",
+    "preview": "vite preview",
+    "lint": "eslint --fix"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.25.2",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^22.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "string-replace-async": "^3.0.2"
+  }
+}
